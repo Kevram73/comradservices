@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/fontawesome-all.min.css')}}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/aos.min.css')}}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/swiper.css')}}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="{{ url_for('static', filename='assets/images/favicon.png')}}">
+</head>
+<body>
+    {% include 'layouts/navigation.html' %}
+    {% include 'layouts/home.html' %}
+    {% include 'layouts/informations.html' %}
+    {% include 'layouts/about.html' %}
+    {% include 'layouts/services.html' %}
+    {% include 'layouts/work.html' %}
+    {% include 'layouts/testimonials.html' %}
+    {% include 'layouts/newsletter.html' %}
+    {% include 'layouts/contact.html' %}
+    {% include 'layouts/location.html' %}
+    {% include 'layouts/footer.html' %}
+    {% include 'layouts/bottom.html' %}
+    
+
+    <!-- Back To Top Button -->
+    <button onclick="topFunction()" id="myBtn">
+        <img src="{{ url_for('static', filename='assets/images/up-arrow.png')}}" alt="alternative">
+    </button>
+    <!-- end of back to top button -->
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script><!-- Bootstrap framework -->
+    <script src="{{ url_for('static', filename='js/purecounter.min.js')}}"></script> <!-- Purecounter counter for statistics numbers -->
+    <script src="{{ url_for('static', filename='js/swiper.min.js')}}"></script><!-- Swiper for image and text sliders -->
+    <script src="{{ url_for('static', filename='js/aos.js')}}"></script><!-- AOS on Animation Scroll -->
+    <script src="{{ url_for('static', filename='js/script.js')}}"></script>  <!-- Custom scripts -->
+</body>
+</html>
